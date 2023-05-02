@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Calibri;
+}
+#video-background{
+    position: absolute;
+    right: 0vw;
+    left: 0vw;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    /* Ensures that the video covers the page  */
+    object-fit: cover;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: black;
+    padding: 35px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: white;
+    height: 45vh;
+    width: 100%;
+    max-width: 620px;
+    opacity: 0.75;
+}
+.search{
+    width: inherit;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.search input{
+    width: 90%;
+    margin: 0px 10px 0px 0px;
+    height: 5vh;
+    box-sizing: border-box;
+    border-radius: 30px;
+    padding: 0px 10px;
+    background-color: #7c7c7c2b;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+.search button{
+    width: 5vh;
+    height: 5vh;
+    border-radius:100%;
+    background-color: #7c7c7c2b;
+    color: white;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    box-sizing: border-box;
+    border: none;
+}
+
+.search button:hover{
+    background-color: #7c7c7c6b;
+}
+#cityName{
+    margin: 3vh 0px 0px 0px;
+    font-size: 28px;
+}
+#temp{
+    margin: 4vh 0px 3vh 0px;
+}
+.double{
+    display: flex;
+    align-items: Center;
+    box-sizing: border-box;
+}

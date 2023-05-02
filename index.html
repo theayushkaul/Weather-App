@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="background.mp4" type="video/mp4">
+      </video>
+      <div class="card">
+        <div class="search">
+            <input type="text" class="search-bar" type = "search" placeholder="Search" id="getCity" aria-label="Search">
+            <button type ="submit" id="submit">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path></svg>
+            </button>
+        </div>
+        <div class="double">
+            <div class="weather">
+                <h2 id="cityName"></h2>
+                <h1 id="temp"></h1>
+                <div id="cloud_pct"></div>
+                <div id="humidity"></div>
+                <div id="wind_speed"></div>
+                <div id="wind_degrees"></div>
+            </div>
+            <div class="date-time">
+                <div id="day"></div>
+                <div id="time"></div>
+                <div id="date"></div>
+            </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
